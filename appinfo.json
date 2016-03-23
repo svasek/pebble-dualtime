@@ -1,0 +1,24 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "svasek@gmail.com",
+    "enableMultiJS": true,
+    "longName": "DualTime OldSchool Casio Style",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "DualTime",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "41b06ba3-28da-41f0-ab54-356f4480c730",
+    "versionLabel": "0.1",
+    "watchapp": {
+        "watchface": true
+    }
+}
