@@ -1,2 +1,2 @@
-void show_analog(void);
-void hide_analog(void);
+void show_windows(void);
+void hide_windows(void);

@@ -1,3 +1,4 @@
+
 #include <pebble.h>
 #include "dualtime.h"
 #include "dualtime_layouts.h"
@@ -105,6 +106,7 @@ static void window_unload(Window *window) {
 }
 
 static void init() {
+  show_windows();
   s_window = window_create();
   window_set_window_handlers(s_window, (WindowHandlers) {
     .load = window_load,
@@ -131,6 +133,7 @@ static void init() {
 }
 
 static void deinit() {
+  //hide_windows();
   gpath_destroy(s_minute_arrow);
   gpath_destroy(s_hour_arrow);
 
