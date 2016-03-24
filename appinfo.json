@@ -3,9 +3,9 @@
     "capabilities": [
         ""
     ],
-    "companyName": "svasek@gmail.com",
+    "companyName": "Milo\u0161 Sva\u0161ek",
     "enableMultiJS": true,
-    "longName": "DualTime OldSchool Casio Style",
+    "longName": "Dual Time OldSchool Casio style watchface",
     "projectType": "native",
     "resources": {
         "media": []
@@ -16,7 +16,7 @@
         "aplite",
         "basalt"
     ],
-    "uuid": "41b06ba3-28da-41f0-ab54-356f4480c730",
+    "uuid": "aff1bd21-f484-40ba-9905-70bb642b6850",
     "versionLabel": "0.1",
     "watchapp": {
         "watchface": true
