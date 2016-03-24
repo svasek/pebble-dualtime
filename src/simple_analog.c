@@ -23,25 +23,10 @@ static void bg_update_proc(Layer *layer, GContext *ctx) {
 
 static void hands_update_proc(Layer *layer, GContext *ctx) {
   GRect bounds = layer_get_bounds(layer);
-  //GPoint center = grect_center_point(&bounds);
   
   time_t now = time(NULL);
   struct tm *t = localtime(&now);
   
-  /*
-  const int16_t second_hand_length = PBL_IF_ROUND_ELSE((bounds.size.w / 2) - 19, bounds.size.w / 2);
- 
-  int32_t second_angle = TRIG_MAX_ANGLE * t->tm_sec / 60;
-  GPoint second_hand = {
-    .x = (int16_t)(sin_lookup(second_angle) * (int32_t)second_hand_length / TRIG_MAX_RATIO) + center.x,
-    .y = (int16_t)(-cos_lookup(second_angle) * (int32_t)second_hand_length / TRIG_MAX_RATIO) + center.y,
-  };
-  */
-
-  // second hand
-  //graphics_context_set_stroke_color(ctx, GColorWhite);
-  //graphics_draw_line(ctx, second_hand, center);
-
   // minute/hour hand
   graphics_context_set_fill_color(ctx, GColorWhite);
   graphics_context_set_stroke_color(ctx, GColorBlack);
@@ -70,11 +55,6 @@ static void date_update_proc(Layer *layer, GContext *ctx) {
   text_layer_set_text(s_num_label, s_num_buffer);
 }
 
-/*
-static void handle_second_tick(struct tm *tick_time, TimeUnits units_changed) {
-  layer_mark_dirty(window_get_root_layer(s_window));
-}
-*/
 
 static void window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
@@ -147,8 +127,6 @@ static void init() {
   for (int i = 0; i < NUM_CLOCK_TICKS; ++i) {
     s_tick_paths[i] = gpath_create(&ANALOG_BG_POINTS[i]);
   }
-
-  //tick_timer_service_subscribe(SECOND_UNIT, handle_second_tick);
 }
 
 static void deinit() {
