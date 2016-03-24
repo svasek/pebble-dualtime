@@ -1,1 +1,1 @@
-# pebble-dualtime
+# Pebble DualTime Analog/Digital Watchface
