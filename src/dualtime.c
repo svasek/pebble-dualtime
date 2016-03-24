@@ -1,5 +1,6 @@
 #include <pebble.h>
-#include "simple_analog.h"
+#include "dualtime.h"
+#include "dualtime_layouts.h"
 
 static Window *s_window;
 static Layer *s_simple_bg_layer, *s_date_layer, *s_hands_layer;
