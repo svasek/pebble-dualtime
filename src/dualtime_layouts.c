@@ -1,5 +1,5 @@
 #include <pebble.h>
-#include "dualtime_layers.h"
+#include "dualtime_layouts.h"
 
 // BEGIN AUTO-GENERATED UI CODE; DO NOT MODIFY
 static Window *s_window;
