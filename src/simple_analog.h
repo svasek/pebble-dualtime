@@ -2,7 +2,9 @@
 
 #include "pebble.h"
 
-#define NUM_CLOCK_TICKS 11
+#define NUM_CLOCK_TICKS 13
+
+// Display: 144x168px
 
 static const struct GPathInfo ANALOG_BG_POINTS[] = {
   { 4,
@@ -34,6 +36,13 @@ static const struct GPathInfo ANALOG_BG_POINTS[] = {
       {135, 49}
     }
   },
+  { 4, (GPoint []){
+      {140, 83},
+      {144, 83},
+      {144, 86},
+      {140, 86}
+    }
+  },    
   { 4, (GPoint []){
       {135, 118},
       {144, 123},
@@ -69,6 +78,14 @@ static const struct GPathInfo ANALOG_BG_POINTS[] = {
       {9, 49}
     }
   },
+    
+  { 4, (GPoint []){
+      {-1, 83},
+      {4, 83},
+      {4, 86},
+      {-1, 86}
+    }
+  },    
   { 4, (GPoint []){
       {9, 118},
       {-1, 123},
@@ -100,8 +117,8 @@ const GPathInfo MINUTE_HAND_POINTS = {
 const GPathInfo HOUR_HAND_POINTS = {
   4,
   (GPoint []) {
-    {-4, 20},
-    {4, 20},
+    {-4, 15},
+    {4, 15},
     {4, -50},
     {-4,  -50},
   }
