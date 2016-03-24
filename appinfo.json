@@ -8,7 +8,20 @@
     "longName": "Dual Time OldSchool Casio style watchface",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "fonts/LCDPhone.ttf",
+                "name": "LCD_PHONE_FONT_26",
+                "targetPlatforms": null,
+                "type": "font"
+            },
+            {
+                "file": "fonts/Crystal.ttf",
+                "name": "CRYSTAL_DIGITAL_FONT_26",
+                "targetPlatforms": null,
+                "type": "font"
+            }
+        ]
     },
     "sdkVersion": "3",
     "shortName": "DualTime",
